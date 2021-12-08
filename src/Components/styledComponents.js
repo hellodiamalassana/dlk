@@ -16,15 +16,15 @@ export const theme = {
   )`,
   white: "#fff",
   black: "#000",
-  grayLight: "#808080",
-  grayStrong: "#eee",
+  grayLight: "#eee",
+  grayStrong: "#808080",
 };
 
 export const NavigationBar = styled(ExtendFlexAttrs).attrs({
   as: "nav",
 })`
   max-height: 48px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
   .fa-hamburger {
     display: none;
@@ -39,7 +39,6 @@ export const Picture = styled(ExtendFlexAttrs).attrs((props) => ({
   as: "picture",
   image: props.image,
 }))`
-  padding-left: 1rem;
   margin-top: 0.1rem;
   margin-right: 6vw;
 
@@ -48,8 +47,8 @@ export const Picture = styled(ExtendFlexAttrs).attrs((props) => ({
     justify-content: flex-start;
   }
   div {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     background-image: url(${(props) => props.image});
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +56,7 @@ export const Picture = styled(ExtendFlexAttrs).attrs((props) => ({
   }
 
   h3 {
-    margin-left: 0.5rem;
+    margin-left: 0.6rem;
     font-size: 16px;
     font-weight: 500;
   }
@@ -75,7 +74,7 @@ export const Menu = styled(ExtendFlexAttrs).attrs({
     margin-bottom: 2px;
     padding: 1rem 2rem 0.8rem 2rem;
     background: ${(props) => props.theme.white};
-    color: ${(props) => props.theme.grayLight};
+    color: ${(props) => props.theme.grayStrong};
     font-size: 14.5px;
     text-decoration: none;
 
@@ -131,10 +130,7 @@ export const Menu = styled(ExtendFlexAttrs).attrs({
   }
 `;
 
-export const ContactLi = styled(ExtendFlexAttrs).attrs((props) => ({
-  varX: props.varX,
-  varY: props.varY,
-}))`
+export const ContactLi = styled(ExtendFlexAttrs)`
   flex: 1;
   justify-content: flex-end;
   position: relative;
@@ -165,30 +161,5 @@ export const ContactLi = styled(ExtendFlexAttrs).attrs((props) => ({
   }
   @media (max-width: 780px) {
     display: none;
-  }
-`;
-
-export const TypedContainer = styled.div`
-  margin-left: 3.5rem;
-  /* line-height: 1.6; */
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h1 {
-    font-size: 3.3rem;
-    margin-bottom: 1.3rem;
-  }
-
-  span {
-    margin-right: 0.4rem;
-    font-size: 1.06rem;
-    font-weight: 600;
-  }
-
-  h4 {
-    display: inline-block;
-    font-weight: 400;
   }
 `;

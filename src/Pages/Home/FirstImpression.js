@@ -1,6 +1,8 @@
+import { Button } from "@mui/material";
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Typed from "typed.js";
-import { TypedContainer } from "../../Components/styledComponents";
+import { TypedContainer } from "./styled-components";
 
 function FirstImpression() {
   useEffect(() => {
@@ -31,13 +33,19 @@ function FirstImpression() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        marginBottom: "8rem",
       }}
     >
       <TypedContainer>
-        <h3>Currently developing: </h3>
+        <h4 className="currently-dev">Currently developing: </h4>
         <h1> Front End Skills</h1>
-        <span>Interested in learning: </span>
-        <h4 className="element"></h4>
+        <div>
+          <span>Interested in learning: </span>
+          <h4 className="element"></h4>
+        </div>
+        <Button component={Link} to={"/"} variant="contained">
+          Contact Me
+        </Button>
       </TypedContainer>
       <lottie-player
         src="https://assets3.lottiefiles.com/packages/lf20_mbmwrx21.json"

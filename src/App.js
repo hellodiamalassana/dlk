@@ -12,7 +12,7 @@ import AboutMe from "./Pages/AboutMe";
 
 function App() {
   return (
-    <>
+    <div style={{ paddingLeft: " 1rem" }}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <Footer /> */}
-    </>
+    </div>
   );
 }
 

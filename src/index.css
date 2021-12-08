@@ -6,8 +6,15 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Quite Magical";
+  src: url(/src/Components/QuiteMagicalRegular-8VA2.ttf);
+  font-style: normal;
+  font-size: 26px;
+}
+
 body {
-  max-width: 1225px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   line-height: 1.5;
@@ -31,26 +38,26 @@ body {
   }
 }
 
-@font-face {
-  font-family: "Quite Magical";
-  src: url(/src/Components/QuiteMagicalRegular-8VA2.ttf);
-  font-style: normal;
-  font-size: 26px;
-}
+/* .container .box:nth-child(2) .circle, 
+.container .box:nth-child(2) .buy {
+  background: #9bdc28;
+} */
 
-.container {
+/*************/
+
+/* .container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: auto;
-  /* scroll-snap-type: y mandatory; */
+  // scroll-snap-type: y mandatory; 
 }
 
 .container .section {
   position: relative;
   width: 100%;
   height: 100%;
-  /* scroll-snap-align: start; */
+  // scroll-snap-align: start; 
   background-blend-mode: multiply;
 }
 
@@ -83,96 +90,77 @@ body {
   bottom: 50px;
   left: 50px;
   max-width: 700px;
-}
+} */
 
-.h2 {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  color: #111;
-  font-weight: 600;
-  font-size: 2em;
-}
-
-p {
-  background: #fff;
-  color: #111;
-  font-weight: 600;
-  padding: 10px 20px;
-  margin-top: 10px;
-}
-
- {
-  /* <div className="container">
-      <div className="section">
-        <div className="content">
-          <h2 className="h2">Section one Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            volutpat ultrices risus, eget mattis neque maximus in. Curabitur
-            facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Maecenas fermentum scelerisque consequat.
-            Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
-            risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
-          </p>
-        </div>
-      </div>
-      <div className="section">
-        <div className="content">
-          <h2 className="h2">Section Two Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            volutpat ultrices risus, eget mattis neque maximus in. Curabitur
-            facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Maecenas fermentum scelerisque consequat.
-            Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
-            risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
-          </p>
-        </div>
-      </div>
-      <div className="section">
-        <div className="content">
-          <h2 className="h2">Section Three Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            volutpat ultrices risus, eget mattis neque maximus in. Curabitur
-            facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Maecenas fermentum scelerisque consequat.
-            Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
-            risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
-          </p>
-        </div>
-      </div>
-      <div className="section">
-        <div className="content">
-          <h2 className="h2">Section Four Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            volutpat ultrices risus, eget mattis neque maximus in. Curabitur
-            facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Maecenas fermentum scelerisque consequat.
-            Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
-            risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
-          </p>
-        </div>
-      </div>
-      <div className="section">
-        <div className="content">
-          <h2 className="h2">Section Five Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            volutpat ultrices risus, eget mattis neque maximus in. Curabitur
-            facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Maecenas fermentum scelerisque consequat.
-            Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
-            risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
-          </p>
-        </div>
-      </div>
-    </div> */
-}
+/* <div className="container">
+  <div className="section">
+    <div className="content">
+      <h2 className="h2">Section one Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat ultrices risus, eget mattis neque maximus in. Curabitur
+        facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Maecenas fermentum scelerisque consequat.
+        Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
+        risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
+      </p>
+    </div>
+  </div>
+  <div className="section">
+    <div className="content">
+      <h2 className="h2">Section Two Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat ultrices risus, eget mattis neque maximus in. Curabitur
+        facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Maecenas fermentum scelerisque consequat.
+        Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
+        risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
+      </p>
+    </div>
+  </div>
+  <div className="section">
+    <div className="content">
+      <h2 className="h2">Section Three Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat ultrices risus, eget mattis neque maximus in. Curabitur
+        facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Maecenas fermentum scelerisque consequat.
+        Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
+        risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
+      </p>
+    </div>
+  </div>
+  <div className="section">
+    <div className="content">
+      <h2 className="h2">Section Four Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat ultrices risus, eget mattis neque maximus in. Curabitur
+        facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Maecenas fermentum scelerisque consequat.
+        Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
+        risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
+      </p>
+    </div>
+  </div>
+  <div className="section">
+    <div className="content">
+      <h2 className="h2">Section Five Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        volutpat ultrices risus, eget mattis neque maximus in. Curabitur
+        facilisis dui ac hendrerit auctor. In quis gravida nulla. Class
+        aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Maecenas fermentum scelerisque consequat.
+        Suspendisse nisi eros, facilisis sed ornare vel, bibendum eget
+        risus. Nullam lobortis tincidunt ligula, ac tincidunt velit
+      </p>
+    </div>
+  </div>
+</div> */
