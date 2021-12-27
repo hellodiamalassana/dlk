@@ -3,17 +3,16 @@
 I made my portfolio website that took me 3 weeks, i learned a lot of **design tips** and a lot of **CSS experience** as i wanted the best final product possible that would represent me.
 
 ## Technologies used
-
-<img src="./src/Components/Images/technologies/html.png" alt="HTML" width=50 />
-<img src="./src/Components/Images/technologies/css.png" alt="CSS" width=50 />
-<img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=50 />
-<img src="./src/Components/Images/technologies/materialUI.png" alt="MaterialUI" height=50/>
-<img src="./src/Components/Images/technologies/styledComponents.png" alt="styled-components" width=65/>
-
 <img src="./src/Components/Images/technologies/reactJS.png" alt="ReactJs" width=50 />
  
 - react-router
 - React Hook Form
+
+<img src="./src/Components/Images/technologies/html.png" alt="HTML" width=50 style="display: inline-block;"/>
+<img src="./src/Components/Images/technologies/css.png" alt="CSS" width=50 style="display: inline-block;"/>
+<img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=50 style="display: inline-block;"/>
+<img src="./src/Components/Images/technologies/materialUI.png" alt="MaterialUI" height=50 style="display: inline-block;"/>
+<img src="./src/Components/Images/technologies/styledComponents.png" alt="styled-components" width=65 style="display: inline-block;"/>
 <br/><br/>
 
 ## Challengues i faced building this website
