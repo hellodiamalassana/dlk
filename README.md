@@ -8,13 +8,15 @@ I made my portfolio website that took me 3 weeks, i learned a lot of **design ti
 - react-router
 - React Hook Form
 
+<div style="display: flex;">
 <img src="./src/Components/Images/technologies/html.png" alt="HTML" width=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/css.png" alt="CSS" width=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/materialUI.png" alt="MaterialUI" height=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/styledComponents.png" alt="styled-components" width=65 style="display: inline-block;"/>
 <br/><br/>
-
+ </div>
+ 
 ## Challengues i faced building this website
 
 The mayor challengue i faced was trying to make the website as clean as possible so it was confortable to navigate, while also focusing of making reusable and clean components/code.  
