@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Portfolio Website
 
 I made my portfolio website that took me 3 weeks, i learned a lot of **design tips** and a lot of **CSS experience** as i wanted the best final product possible that would represent me.
@@ -41,3 +42,6 @@ Here i used some external "design" libraries so the website seems more alive.
 👉 For the "parallax effect" when hover on each project's box i used [vanilla-tilt](https://micku7zu.github.io/vanilla-tilt.js/ "vanilla-tilt")
 
 👉 Then for the effect of the images appearing on scroll i used [scrollreveal.js](https://scrollrevealjs.org/ "scrollrevealjs")
+=======
+
+>>>>>>> 699ad992048d6d692d2e4eb978efd17e7cd83a8c
