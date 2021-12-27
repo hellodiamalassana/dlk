@@ -8,7 +8,7 @@ I made my portfolio website that took me 3 weeks, i learned a lot of **design ti
 - react-router
 - React Hook Form
 
-<div style="display: flex;">
+<div style="display: flex; column-gap: 3.5px;">
 <img src="./src/Components/Images/technologies/html.png" alt="HTML" width=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/css.png" alt="CSS" width=50 style="display: inline-block;"/>
 <img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=50 style="display: inline-block;"/>
