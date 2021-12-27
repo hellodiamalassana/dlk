@@ -3,17 +3,17 @@
 I made my portfolio website that took me 3 weeks, i learned a lot of **design tips** and a lot of **CSS experience** as i wanted the best final product possible that would represent me.
 
 ## Technologies used
-<img src="./src/Components/Images/technologies/reactJS.png" alt="ReactJs" width=50 />
+<img src="./src/Components/Images/technologies/reactJS.png" alt="ReactJs" width=55 />
  
 - react-router
 - React Hook Form
 
-<div style="display: flex; column-gap: 3.5px;">
-<img src="./src/Components/Images/technologies/html.png" alt="HTML" width=50 style="display: inline-block;"/>
-<img src="./src/Components/Images/technologies/css.png" alt="CSS" width=50 style="display: inline-block;"/>
-<img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=50 style="display: inline-block;"/>
-<img src="./src/Components/Images/technologies/materialUI.png" alt="MaterialUI" height=50 style="display: inline-block;"/>
-<img src="./src/Components/Images/technologies/styledComponents.png" alt="styled-components" width=65 style="display: inline-block;"/>
+<div style="display: flex;">
+<img src="./src/Components/Images/technologies/html.png" alt="HTML" width=45 />
+<img src="./src/Components/Images/technologies/css.png" alt="CSS" width=45 />
+<img src="./src/Components/Images/technologies/javascript.png" alt="JavaScript" width=45 />
+<img src="./src/Components/Images/technologies/materialUI.png" alt="MaterialUI" height=45 />
+<img src="./src/Components/Images/technologies/styledComponents.png" alt="styled-components" width=65 />
 <br/><br/>
  </div>
  
@@ -26,8 +26,6 @@ I tried to achieve this by giving it some life by using some smooth animations (
 
 The form located in the contact section was made using React Hook Form validation system and all this external hook provides.
 When submitted the [Form Submit](https://formsubmit.co/?utm_source=formsubmit.co&utm_medium=site%20link&utm_campaign=submission%20page "Form Submit") website handle the message and send it to my e-mail.
-
----
 
 ## About animations
 
