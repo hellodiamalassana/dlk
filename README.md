@@ -1,5 +1,5 @@
 <style>
-  p {
+  p * {
     display: inline-block;
   }
 </style>
