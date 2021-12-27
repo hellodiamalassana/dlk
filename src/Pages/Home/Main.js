@@ -1,15 +1,10 @@
 import React from "react";
-import MyProjects from "./Main";
+import Presentation from "./Presentation";
+import MyProjects from "../Projects/Main";
 import { useGlobalContext } from "../../Components/state/useContext";
 import { motion } from "framer-motion";
 
-function index() {
-  return <Projects></Projects>;
-}
-
-export default index;
-
-function Projects() {
+function Main() {
   const { pageVariants, pageTransitions } = useGlobalContext();
 
   return (
@@ -20,7 +15,10 @@ function Projects() {
       variants={pageVariants}
       transition={pageTransitions}
     >
+      <Presentation />
       <MyProjects />
     </motion.div>
   );
 }
+
+export default Main;

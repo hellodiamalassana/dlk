@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../Header/Navigationbar";
+import Header from "./Navigationbar";
 
 function index() {
-  return <Header />;
+  return <Header></Header>;
 }
 
 export default index;

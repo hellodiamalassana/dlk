@@ -1,27 +1,35 @@
 import React from "react";
 import "./index.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 // Components
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 // Pages
 import Home from "./Pages/Home";
-import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import AboutMe from "./Pages/AboutMe";
+import Error from "./Pages/Error";
+// Page transitions
+import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./Components/hooks/ScrollToTop";
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div style={{ paddingLeft: " 1rem" }}>
+    <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      {/* <Footer /> */}
-    </div>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </AnimatePresence>
+      <ScrollToTop />
+    </>
   );
 }
 

@@ -1,14 +1,8 @@
 import React from "react";
-import FirstImpression from "./FirstImpression";
-import MyProjects from "./ProjectsSection/MyProjects";
+import Main from "./Main";
 
 function index() {
-  return (
-    <>
-      <FirstImpression />
-      <MyProjects />
-    </>
-  );
+  return <Main></Main>;
 }
 
 export default index;

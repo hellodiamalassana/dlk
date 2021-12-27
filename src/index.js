@@ -5,7 +5,7 @@ import App from "./App";
 import { AppProvider } from "./Components/state/useContext";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./Components/styledComponents";
+import { theme } from "./Components/Header/styled-components";
 
 ReactDOM.render(
   <React.StrictMode>

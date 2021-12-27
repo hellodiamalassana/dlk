@@ -1,45 +1,54 @@
-import React, { useState } from "react";
-import markZuck from "../Images/mark.jpg";
-import {
-  Picture,
-  Menu,
-  HamburgerNav,
-  NavigationBar,
-  ContactLi,
-} from "../styledComponents";
+import React, { useEffect, useRef } from "react";
+import projectsData from "../data/projectsData";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import UseWindowSize from "../useWindowSize";
-import { Button } from "@mui/material";
+import scrollReveal from "../animations/ScrollReveal";
+import santa from "../Images/santa.jpeg";
+import SidebarMenu from "./SidebarMenu";
+import Button from "@mui/material/Button";
+import {
+  StyledPicture,
+  StyledMenu,
+  StyledNavigation,
+  StyledContact,
+  StyledBadge,
+} from "./styled-components";
 
 function Header() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const windowWidth = UseWindowSize();
   const { pathname } = useLocation();
-
-  const hamburgerMenu = () => {
-    setToggleMenu(() => !toggleMenu);
-  };
+  // Scroll Animation
+  const scrollNavbar = useRef();
+  useEffect(() => {
+    scrollReveal.reveal(scrollNavbar.current, {
+      origin: "top",
+      duration: 700,
+      distance: "20px",
+      delay: 100,
+    });
+  }, []);
 
   return (
-    <NavigationBar>
-      <Picture image={markZuck}>
+    <StyledNavigation ref={scrollNavbar}>
+      <StyledPicture to="/about" image={santa}>
         <div />
-        <h3 style={{ fontFamily: "Quite Magical", fontSize: "28px" }}>
-          Lautaro Figueroa
-        </h3>
-      </Picture>
-      <Menu>
+        <h3>Lautaro Figueroa</h3>
+      </StyledPicture>
+      <StyledMenu>
         <Link to="/" className={pathname === "/" ? "activeLink" : ""}>
           Home
         </Link>
-        <Link
-          to="/projects"
+        <a
+          href="/#projectsId"
           className={pathname === "/projects" ? "activeLink" : ""}
         >
-          Projects
-        </Link>
-        <div className="skewedDiv">
+          <StyledBadge
+            badgeContent={projectsData.length || "..."}
+            color="primary"
+          >
+            Projects
+          </StyledBadge>
+        </a>
+        <div>
           <button>
             <Link
               to="/about"
@@ -49,14 +58,16 @@ function Header() {
             </Link>
           </button>
         </div>
-      </Menu>
-      <ContactLi>
+      </StyledMenu>
+      {/* Contact */}
+      <StyledContact>
         <Button component={Link} to="/contact">
           Contact
         </Button>
-      </ContactLi>
-      <i className="fas fa-hamburger fa-2x" onClick={() => hamburgerMenu()}></i>
-    </NavigationBar>
+      </StyledContact>
+      {/* Hamburger Menu */}
+      <SidebarMenu />
+    </StyledNavigation>
   );
 }
 
