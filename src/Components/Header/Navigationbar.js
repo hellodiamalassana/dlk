@@ -3,7 +3,7 @@ import projectsData from "../data/projectsData";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import scrollReveal from "../animations/ScrollReveal";
-import santa from "../Images/santa.jpeg";
+import pfp0 from "../../Components/Images/tono-blancon.jpeg";
 import SidebarMenu from "./SidebarMenu";
 import Button from "@mui/material/Button";
 import {
@@ -29,8 +29,8 @@ function Header() {
 
   return (
     <StyledNavigation ref={scrollNavbar}>
-      <StyledPicture to="/about" image={santa}>
-        <div />
+      <StyledPicture to="/about">
+        <img src={pfp0} alt="Lautaro Figueroa" />
         <h3>Lautaro Figueroa</h3>
       </StyledPicture>
       <StyledMenu>
@@ -59,7 +59,6 @@ function Header() {
           </button>
         </div>
       </StyledMenu>
-      {/* Contact */}
       <StyledContact>
         <Button component={Link} to="/contact">
           Contact

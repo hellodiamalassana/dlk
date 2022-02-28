@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import scrollReveal from "../../Components/animations/ScrollReveal";
 import Button from "@mui/material/Button";
 import TypedAnimation from "../../Components/animations/TypedAnimation";
-import scrollReveal from "../../Components/animations/ScrollReveal";
 import { StyledPresentation, TypedContainer } from "./styled-components";
+import scrollDownImg from "../../Components/Images/scrollDown.svg";
 
 export default function FirstImpression() {
   const scrollTitle = useRef(null); // For Scroll Anim
@@ -29,32 +30,54 @@ export default function FirstImpression() {
   }, []);
 
   return (
-    <StyledPresentation>
-      <TypedContainer>
-        <h4 className="currently-dev">Currently developing: </h4>
-        <h1 ref={scrollTitle}> Front End Skills</h1>
-        <div ref={scrollTypedAnim}>
-          <span>Interested in learning: </span>
-          <h4 className="element"></h4>
-        </div>
-        <Button
-          component={Link}
-          to="/contact"
-          variant="contained"
-          ref={scrollButton}
-        >
-          Contact Me
-        </Button>
-      </TypedContainer>
-      <lottie-player
-        ref={scrollGif}
-        src="https://assets10.lottiefiles.com/packages/lf20_psdcolux.json"
-        background="transparent"
-        speed="1"
-        style={{ width: "50%", height: "max-content" }}
-        loop
-        autoplay
-      ></lottie-player>
-    </StyledPresentation>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <StyledPresentation>
+        <TypedContainer>
+          <h4 className="currently-dev">Currently developing: </h4>
+          <h1 ref={scrollTitle}> Front End Skills</h1>
+          <div ref={scrollTypedAnim}>
+            <span>Interested in learning: </span>
+            <h4 className="element"></h4>
+          </div>
+          <div className="my-buttons">
+            <Button
+              component={Link}
+              to="/about"
+              disableElevation
+              variant="contained"
+              ref={scrollButton}
+            >
+              About Me
+            </Button>
+            <Button
+              component={Link}
+              to="/contact"
+              disableElevation
+              variant="contained"
+              ref={scrollButton}
+            >
+              Contact Me
+            </Button>
+          </div>
+        </TypedContainer>
+        <lottie-player
+          speed="1"
+          loop
+          autoplay
+          ref={scrollGif}
+          background="transparent"
+          className="lottie-player"
+          src="https://assets10.lottiefiles.com/packages/lf20_psdcolux.json"
+        ></lottie-player>
+      </StyledPresentation>
+      <a href="/#my-projects" className="center-image">
+        <img src={scrollDownImg} alt="Scroll Down" />
+      </a>
+    </div>
   );
 }

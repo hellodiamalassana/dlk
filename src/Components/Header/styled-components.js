@@ -41,9 +41,8 @@ export const StyledNavigation = styled(ExtendFlexAttrs).attrs({
   }
 `;
 
-export const StyledPicture = styled(ExtendFlexAttrs).attrs((props) => ({
+export const StyledPicture = styled(ExtendFlexAttrs).attrs(() => ({
   as: Link,
-  image: props.image,
 }))`
   margin: 0.1rem 4.5vw 0 0;
   padding-left: 1rem;
@@ -54,12 +53,9 @@ export const StyledPicture = styled(ExtendFlexAttrs).attrs((props) => ({
     flex: 1;
     justify-content: flex-start;
   }
-  div {
+  img {
     width: 40px;
     height: 40px;
-    background-image: url(${(props) => props.image});
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 100%;
     transition: transform 0.2s ease-out;
     &:hover {

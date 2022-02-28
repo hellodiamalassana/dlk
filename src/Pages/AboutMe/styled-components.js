@@ -8,34 +8,33 @@ export const StyledSectionTitle = styled.div`
   margin: 4rem auto 0 auto;
 
   h1 {
-    margin: 0 0 2px -2.5rem;
+    padding-left: 2rem;
     color: rgb(0, 0, 0, 0.2); //0.2
     font-size: 1.35rem;
   }
 
   hr {
-    width: 100%;
+    width: 88.5%;
+    margin: auto;
     border: 1px solid #fff;
     border-top: 1px solid rgb(0, 0, 0, 0.07);
-    margin-bottom: 0.3rem;
   }
 `;
 
-export const StyledAboutMe = styled.section`
+export const StyledAboutMe = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 0.25rem;
-  width: 770px;
-  margin: 6rem auto 5rem auto;
-  padding: 1.8rem 2rem 1.6rem 2.5rem;
+  max-width: 750px;
+  margin: 6rem auto 3rem auto;
+  padding: 1.8rem 1.85rem 1.6rem 2.25rem;
   border: 1px solid rgba(0, 0, 0, 0.06); //0.06
-  border-radius: 20px;
+  border-radius: 0.85rem;
 
   p {
     font-family: "Gotham LsLight";
-    font-size: 15.6px;
-    color: rgba(0, 0, 0, 0.9);
+    font-size: 0.995rem;
     line-height: 1.6;
 
     &:not(:first-child) {
@@ -49,7 +48,17 @@ export const StyledAboutMe = styled.section`
 
   img {
     width: 310px;
+    max-width: 100%;
     border-radius: 50%;
+  }
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 0;
+    img {
+      margin-top: 2rem;
+    }
   }
 `;
 
@@ -84,6 +93,43 @@ export const StyledSocialLinks = styled.div`
 
   .linkedin:hover {
     color: #0a66c2;
+  }
+`;
+
+export const StyledEducation = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+  padding-bottom: 0.65rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.35rem;
+
+    h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    li {
+      margin-left: 1rem;
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    ul {
+      padding: 0 1.85rem 0 1.85rem;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 `;
 

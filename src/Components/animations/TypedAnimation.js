@@ -5,8 +5,8 @@ function TypedAnimation() {
   var options = {
     strings: [
       "<b style='color: #3178c6'>Typescript</b> ^200",
-      "More deeply <b style='color: #764abc'>Redux</b>^200",
       "<b>Next Js</b>^200",
+      "<b>Backend development - databases</b> ^200",
     ],
     typeSpeed: 50, // typeSpeed in milliseconds
     startDelay: 800, // startDelay Time before typing starts in milliseconds

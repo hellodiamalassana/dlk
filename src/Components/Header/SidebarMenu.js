@@ -41,6 +41,7 @@ function HamburgerMenu() {
                   to={item.to}
                   key={item.title}
                   style={{ color: "rgba(0, 0, 0, 0.87)" }}
+                  onClick={() => setOpenMenu(false)}
                 >
                   <ListItemText>{item.title}</ListItemText>
                 </ListItem>

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import projectsData from "../../Components/data/projectsData";
 import SingleProject from "./SingleProject";
-import LastProject from "./LastProject";
 import scrollReveal from "../../Components/animations/ScrollReveal";
 import TiltAnimation from "../../Components/animations/TiltAnimation";
 import { StyledProjectsSection } from "./styled-components";
@@ -31,21 +30,20 @@ function MyProjects() {
         style={{ width: "100%" }}
       >
         <path
-          fill="#eeeeee"
+          fill="#f8f8f8"
           fillOpacity="1"
           d="M0,128L60,138.7C120,149,240,171,360,160C480,149,600,107,720,112C840,117,960,171,1080,181.3C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           id="projectsId"
         />
       </svg>
       <StyledProjectsSection>
+        <h2 id="my-projects">My Projects</h2>
+        <span className="h2-border" />
         <div>
-          <h2>my projects</h2>
-          <span className="h2-border" />
           {projectsData.map((project) => {
             return <SingleProject key={project.id} {...project} />;
           })}
         </div>
-        <LastProject />
       </StyledProjectsSection>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-import { useGlobalContext } from "../../Components/state/useContext";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { useGlobalContext } from "../../Components/state/useContext";
 import { StyledSectionTitle } from "../AboutMe/styled-components";
 import { ImPhone } from "react-icons/im";
 import { HiMail } from "react-icons/hi";
@@ -31,7 +31,7 @@ function Contact() {
         <h1>Contact Me</h1>
         <hr />
       </StyledSectionTitle>
-      <div className="contact-header">
+      <section className="contact-header">
         <form
           onSubmit={() => handleSubmit(onSubmit)}
           method="POST"
@@ -50,7 +50,7 @@ function Contact() {
                   message: "Invalid length, at least 2 words",
                 },
               })}
-              placeholder="Name"
+              placeholder="Nice to meet you"
             />
           </div>
           <div className="inputBox">
@@ -89,7 +89,7 @@ function Contact() {
           <a href="tel:54387 5380900">+54387 5380900</a>
           <HiMail /> <p>lautaroef@gmail.com</p>
         </div>
-      </div>
+      </section>
     </motion.div>
   );
 }

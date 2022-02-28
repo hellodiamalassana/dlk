@@ -1,8 +1,8 @@
 import React from "react";
-import Presentation from "./Presentation";
-import MyProjects from "../Projects/Main";
 import { useGlobalContext } from "../../Components/state/useContext";
 import { motion } from "framer-motion";
+import Presentation from "./Presentation";
+import Projects from "../Projects/Main";
 
 function Main() {
   const { pageVariants, pageTransitions } = useGlobalContext();
@@ -16,7 +16,7 @@ function Main() {
       transition={pageTransitions}
     >
       <Presentation />
-      <MyProjects />
+      <Projects />
     </motion.div>
   );
 }

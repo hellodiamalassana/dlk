@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 
 * {
   margin: 0;
@@ -8,12 +9,23 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0 auto;
   padding: 0;
   line-height: 1.5;
+}
+
+section {
+  padding: 0 1.5rem;
+  min-height: 100vh;
+}
+@media screen and (max-width: 550px) {
+  section {
+    padding: 0;
+  }
 }
 
 /* Fonts */
@@ -42,15 +54,25 @@ body {
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 }
 
+/* Hamburger menu */
+span.MuiTypography-root {
+  font-size: 1.15rem;
+}
+
+/* Scroll down image */
+.center-image {
+  margin: auto;
+}
+.center-image img {
+  width: 37.5px;
+}
+
 /* Scroll bar customization */
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
-::-webkit-scrollbar-track {
-  background: #cacaca65;
-}
 ::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: #dfdfdf;
   border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover {
