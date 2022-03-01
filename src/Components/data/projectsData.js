@@ -5,6 +5,7 @@ import rumrumCars0 from "../../Pages/Projects/images/rumrum-cars-0.png";
 const projectsData = [
   {
     title: "Tourism Website",
+    endDate: "24/12/2021",
     image: tourism0,
     description:
       "A Tourism booking website made using React with useContext-Redux for the state. With a quick weather info about the touristic place. Inspired in barlantravel.com",
@@ -25,6 +26,7 @@ const projectsData = [
   },
   {
     title: "RumRum Cars",
+    endDate: "17/02/2022",
     image: rumrumCars0,
     description:
       "My last project was a 'Rent a car business model', which i build using MERN stack + Redux for the state and Sass for the styling. And for storing images i used Cloudinary.",

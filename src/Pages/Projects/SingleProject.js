@@ -1,13 +1,23 @@
 import React from "react";
 import { StyledSingleProject } from "./styled-components";
 
-function SingleProject({ title, image, description, technologies, links }) {
+function SingleProject({
+  title,
+  endDate,
+  image,
+  description,
+  technologies,
+  links,
+}) {
   return (
     <>
       {title ? (
         <StyledSingleProject data-tilt imageSrc={image}>
           <div className="box">
-            <h3>{title}</h3>
+            <div>
+              <h3>{title}</h3>
+              <span className="end-date">End date {endDate}</span>
+            </div>
             <a href={links.seeProject} target="_blank">
               <div
                 className="project-image"

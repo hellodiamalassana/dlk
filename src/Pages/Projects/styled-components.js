@@ -54,8 +54,20 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
     }
+
     h3 {
+      display: inline-block;
       font-weight: 500;
+    }
+
+    .end-date {
+      margin-left: 1rem;
+      color: #a1a1a1;
+      font-size: 0.95rem;
+      @media screen and (max-width: 480px) {
+        display: block;
+        margin-left: 0;
+      }
     }
 
     p {
@@ -116,8 +128,5 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     &:hover .project-image {
       transform: translate3d(0%, 0%, 10px); //25px
     }
-  }
-
-  @media screen and (max-width: 480px) {
   }
 `;
