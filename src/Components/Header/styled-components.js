@@ -68,8 +68,9 @@ export const StyledPicture = styled(ExtendFlexAttrs).attrs(() => ({
 
   h3 {
     font-family: "Quite Magical";
-    font-size: 28px;
-    margin-left: 0.6rem;
+    font-size: 1.95rem;
+    margin-top: 0.125rem;
+    margin-left: 0.625rem;
     font-weight: 500;
   }
 `;

@@ -38,7 +38,7 @@ function Header() {
           Home
         </Link>
         <a
-          href="/#projectsId"
+          href="/#my-projects"
           className={pathname === "/projects" ? "activeLink" : ""}
         >
           <StyledBadge
