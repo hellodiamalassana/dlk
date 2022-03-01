@@ -26,7 +26,7 @@ function Main() {
       <StyledAboutMe>
         <div>
           <p>
-            I'm Lautaro Figueroa, 21 years old and I'm most excited about
+            I'm Lautaro Figueroa, 21 years old, and I'm most excited about
             <span> Frontend development</span>, especially using ReactJS with
             Redux, however i'm interested in learning more deeply about Backend
             development.

@@ -45,7 +45,9 @@ const StyledFooter = styled.footer`
 const StyledArrowUp = styled.div`
   position: absolute;
   top: -1rem;
-  left: 48%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;

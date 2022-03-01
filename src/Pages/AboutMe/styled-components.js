@@ -100,7 +100,9 @@ export const StyledEducation = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 4rem auto;
-  padding-bottom: 0.65rem;
+  padding: 0 0 0.65rem 3.25rem;
+  max-width: calc(${({ theme }) => theme.maxWidth} - 180px);
+
   ul {
     display: flex;
     flex-direction: column;

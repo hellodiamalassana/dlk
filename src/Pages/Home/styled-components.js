@@ -4,11 +4,11 @@ export const StyledPresentation = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: ${({ theme }) => theme.maxWidth};
   height: 595px;
+  margin: auto;
+  max-width: calc(${({ theme }) => theme.maxWidth} - 185px);
 
   .lottie-player {
-    height: max-content;
     margin-top: 15rem;
   }
 
@@ -18,8 +18,8 @@ export const StyledPresentation = styled.div`
 `;
 
 export const TypedContainer = styled.div`
+  width: 100%;
   margin-left: 2.8rem;
-  width: 95%;
 
   .currently-dev {
     font-size: 1.45rem;
