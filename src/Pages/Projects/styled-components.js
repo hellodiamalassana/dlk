@@ -50,6 +50,7 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     background: #242d62;
     //#202135
     transition: box-shadow 0.2s ease-out;
+    min-height: 677px;
 
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
@@ -72,10 +73,11 @@ export const StyledSingleProject = styled.div.attrs(() => ({
 
     p {
       font-family: "Gotham LsLight";
+      margin-bottom: 0.25rem;
       padding-right: 1.5rem;
       font-size: 14px; // 14.5px
-      line-height: 1.7;
-      letter-spacing: 0.25px;
+      line-height: 1.6;
+      letter-spacing: 0.15px;
     }
 
     .technologies {

@@ -24,7 +24,12 @@ function SingleProject({
                 style={{ backgroundImage: `url(${image})` }}
               />
             </a>
-            <p>{description}</p>
+            <div>
+              {description.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+            </div>
+
             <div className="technologies">
               {technologies.map((tech, index) => (
                 <span key={index} className="spans">
