@@ -26,7 +26,7 @@ export const StyledAboutMe = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 0.25rem;
-  max-width: 750px;
+  max-width: 800px;
   margin: 6rem auto 3rem auto;
   padding: 1.8rem 1.85rem 1.6rem 2.25rem;
   border: 1px solid rgba(0, 0, 0, 0.06); //0.06
@@ -72,7 +72,6 @@ export const StyledTechs = styled.div`
     margin: 0.225rem 0.5rem 0.225rem 0;
     padding: 0 0.6rem;
     border-radius: 2.5px;
-    color: ${({ theme }) => theme.textColor};
     background-color: rgba(0, 0, 0, 0.08);
     font-size: 13.5px;
   }

@@ -7,7 +7,7 @@ import Footer from "./Components/Footer";
 // Pages
 import Home from "./Pages/Home/Main";
 import Contact from "./Pages/Contact/Main";
-import AboutMe from "./Pages/AboutMe";
+import AboutMe from "./Pages/AboutMe/Main";
 import Error from "./Pages/Error";
 // Page transitions
 import { AnimatePresence } from "framer-motion";

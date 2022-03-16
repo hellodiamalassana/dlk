@@ -34,7 +34,6 @@ export const StyledProjectsSection = styled.section`
 export const StyledSingleProject = styled.div.attrs(() => ({
   as: "picture",
 }))`
-  transform-style: preserve-3d;
   width: 475px;
   max-width: 100%;
   height: max-content;
@@ -42,7 +41,6 @@ export const StyledSingleProject = styled.div.attrs(() => ({
   .box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     row-gap: 0.75rem;
     padding: 1.5rem 1.75rem 2rem 1.75rem;
     color: #fff;
@@ -50,7 +48,8 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     background: #242d62;
     //#202135
     transition: box-shadow 0.2s ease-out;
-    min-height: 677px;
+    transform-style: preserve-3d;
+    min-height: 690px;
 
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
@@ -73,7 +72,7 @@ export const StyledSingleProject = styled.div.attrs(() => ({
 
     p {
       font-family: "Gotham LsLight";
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.4rem;
       padding-right: 1.5rem;
       font-size: 14px; // 14.5px
       line-height: 1.6;
@@ -87,36 +86,13 @@ export const StyledSingleProject = styled.div.attrs(() => ({
       span {
         font-family: "Gotham LsLight";
         margin: 2.5px 3.5px;
-        padding: 1.5px 9px;
+        padding: 0.05rem 0.7rem;
         border-radius: 2px;
         font-size: 13px;
         background-color: rgba(255, 255, 255, 0.1); //0.14
       }
     }
 
-    .links-buttons {
-      display: flex;
-      column-gap: 0.6rem;
-      a {
-        font-family: "Gotham LsLight";
-        width: max-content;
-        padding: 0.325rem 2rem;
-        color: #fff;
-        background-color: #1976d2;
-        font-size: 0.9rem;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.1s ease-out;
-
-        &:hover {
-          background-color: #1342aa; //#1954d2
-        }
-      }
-
-      svg {
-        font-size: 16px;
-      }
-    }
     .project-image {
       height: 23rem;
       max-width: 100%;
@@ -129,6 +105,27 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     }
     &:hover .project-image {
       transform: translate3d(0%, 0%, 10px); //25px
+    }
+  }
+  .links-buttons {
+    display: flex;
+    column-gap: 0.4rem;
+    margin-top: 0.75rem;
+    a {
+      flex: 1;
+      font-family: "Gotham LsLight";
+      padding: 0.325rem 2rem;
+      color: #fff;
+      background-color: #1976d2;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.1s ease-out;
+
+      &:hover {
+        background-color: #1565c0;
+      }
     }
   }
 `;

@@ -37,14 +37,14 @@ function SingleProject({
                 </span>
               ))}
             </div>
-            <div className="links-buttons">
-              <a href={links.seeProject} target="_blank">
-                Live
-              </a>
-              <a href={links.seeCode} target="_blank">
-                Github
-              </a>
-            </div>
+          </div>
+          <div className="links-buttons">
+            <a href={links.seeProject} target="_blank">
+              Live
+            </a>
+            <a href={links.seeCode} target="_blank">
+              Github
+            </a>
           </div>
         </StyledSingleProject>
       ) : null}

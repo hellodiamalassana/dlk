@@ -26,25 +26,28 @@ function Main() {
       <StyledAboutMe>
         <div>
           <p>
-            I'm Lautaro Figueroa, 21 years old, from Argentina and I'm most
-            excited about
-            <span> Frontend development</span>, especially using ReactJS with
-            Redux, however i'm interested in learning more deeply
-            <span> Backend development</span>.
+            I'm Lautaro Figueroa, 22 years old, from Argentina and I'm most
+            excited about <b>Front-End Development</b> using mainly React.js
+            with Redux. <br />
+            However I'm interested in diving deeply into the
+            <b> Back-End Development </b>
+            as I'm aiming to become a Full-Stack Developer in the short term.
           </p>
           <p>
-            I specially care about how the user will experience the service and
-            for delivering the best possible UI, (simple and modern).
+            Whenever I start a new project, my main goal is to try to deliver
+            the most <b>user-friendly interface</b> with a modern design so that
+            the user can have the best possible experience on my site.
           </p>
+          {/* Whenever I start a new project, I like to set as my main goal to try to deliver the most user-friendly interface with a modern design so that the user can have the best possible experience on my site. */}
           <p>
             Some of the <span>technologies/languages</span> I use:
           </p>
           <StyledTechs>
             {learnedTechnologies.map((tech) => (
               <CustomizedToolTip
-                key={tech.title}
-                title={<img src={tech.src} width={50} />}
                 placement="top"
+                key={tech.title}
+                title={<img src={tech.src} width={tech.width ?? 50} />}
               >
                 <span key={tech.title}>{tech.title}</span>
               </CustomizedToolTip>
@@ -52,8 +55,8 @@ function Main() {
           </StyledTechs>
           <p>
             <span>
-              I'm looking for new and strong challenges so i can improve as a
-              developer and help a business at the same time.
+              {/* I'm looking for new and strong challenges so i can improve as a
+              developer and help a business at the same time. */}
             </span>
           </p>
         </div>
