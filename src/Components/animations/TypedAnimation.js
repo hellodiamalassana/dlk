@@ -7,6 +7,7 @@ function TypedAnimation() {
       "<b style='color: #3178c6'>Typescript</b> ^200",
       "<b>Next Js</b>^200",
       "<b>Backend development - databases</b> ^200",
+      "<b>Microservices</b>",
     ],
     typeSpeed: 50, // typeSpeed in milliseconds
     startDelay: 800, // startDelay Time before typing starts in milliseconds

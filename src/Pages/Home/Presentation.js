@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import scrollReveal from "../../Components/animations/ScrollReveal";
-import Button from "@mui/material/Button";
-import TypedAnimation from "../../Components/animations/TypedAnimation";
 import { StyledPresentation, TypedContainer } from "./styled-components";
+import scrollReveal from "../../Components/animations/ScrollReveal";
+import TypedAnimation from "../../Components/animations/TypedAnimation";
 import scrollDownImg from "../../Components/Images/scrollDown.svg";
+import Button from "@mui/material/Button";
 
 export default function FirstImpression() {
   const scrollTitle = useRef(null); // For Scroll Anim
