@@ -39,11 +39,12 @@ export default function FirstImpression() {
       <StyledPresentation>
         <TypedContainer>
           <h4 className="currently-dev">Currently developing: </h4>
-          <h1 ref={scrollTitle}> Front End Skills</h1>
+          <h1 ref={scrollTitle}>Full Stack Web Development skills</h1>
           <div ref={scrollTypedAnim}>
             <span>Interested in learning: </span>
             <h4 className="element"></h4>
           </div>
+          <h3>Currently learning: SQL Databases & Python</h3>
           <div className="my-buttons">
             <Button
               component={Link}
@@ -72,6 +73,7 @@ export default function FirstImpression() {
           ref={scrollGif}
           background="transparent"
           className="lottie-player"
+          style={{ width: "75%" }}
           src="https://assets10.lottiefiles.com/packages/lf20_psdcolux.json"
         ></lottie-player>
       </StyledPresentation>

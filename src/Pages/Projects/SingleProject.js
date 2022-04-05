@@ -16,17 +16,14 @@ function SingleProject({
           <div className="box">
             <div>
               <h3>{title}</h3>
-              <span className="end-date">End date {endDate}</span>
+              {<span className="end-date">End date {endDate}</span>}
             </div>
             <a href={links.seeProject} target="_blank">
-              <div
-                className="project-image"
-                style={{ backgroundImage: `url(${image})` }}
-              />
+              <img src={image} alt={title} />
             </a>
             <div>
-              {description.map((paragraph) => (
-                <p>{paragraph}</p>
+              {description.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
               ))}
             </div>
 
@@ -42,9 +39,11 @@ function SingleProject({
             <a href={links.seeProject} target="_blank">
               Live
             </a>
-            <a href={links.seeCode} target="_blank">
-              Github
-            </a>
+            {links.seeCode && (
+              <a href={links.seeCode} target="_blank">
+                Github
+              </a>
+            )}
           </div>
         </StyledSingleProject>
       ) : null}

@@ -18,7 +18,6 @@ export const StyledProjectsSection = styled.section`
     font-weight: 600;
     letter-spacing: 0.3px;
     text-align: center;
-    text-transform: capitalize;
   }
 
   .h2-border {
@@ -34,7 +33,7 @@ export const StyledProjectsSection = styled.section`
 export const StyledSingleProject = styled.div.attrs(() => ({
   as: "picture",
 }))`
-  width: 475px;
+  width: 525px;
   max-width: 100%;
   height: max-content;
 
@@ -46,10 +45,9 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     color: #fff;
     border-radius: 4px;
     background: #242d62;
-    //#202135
     transition: box-shadow 0.2s ease-out;
     transform-style: preserve-3d;
-    min-height: 690px;
+    min-height: 700px;
 
     &:hover {
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
@@ -61,7 +59,7 @@ export const StyledSingleProject = styled.div.attrs(() => ({
     }
 
     .end-date {
-      margin-left: 1rem;
+      display: block;
       color: #a1a1a1;
       font-size: 0.95rem;
       @media screen and (max-width: 480px) {
@@ -81,29 +79,27 @@ export const StyledSingleProject = styled.div.attrs(() => ({
 
     .technologies {
       display: flex;
+      flex-grow: 1;
+      align-content: flex-end;
       flex-wrap: wrap;
 
       span {
         font-family: "Gotham LsLight";
         margin: 2.5px 3.5px;
-        padding: 0.05rem 0.7rem;
+        padding: 0.15rem 0.85rem;
         border-radius: 2px;
-        font-size: 13px;
-        background-color: rgba(255, 255, 255, 0.1); //0.14
+        font-size: 13.5px;
+        background-color: rgba(255, 255, 255, 0.2); //0.14
       }
     }
 
-    .project-image {
-      height: 23rem;
-      max-width: 100%;
-      background-size: cover;
-      background-position: top center;
-      background-repeat: no-repeat;
+    img {
+      width: 100%;
       transition: all 300ms;
       transform-style: preserve-3d;
       transform: translate3d(0%, 0%, 0px);
     }
-    &:hover .project-image {
+    &:hover img {
       transform: translate3d(0%, 0%, 10px); //25px
     }
   }

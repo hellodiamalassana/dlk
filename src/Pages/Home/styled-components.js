@@ -6,7 +6,7 @@ export const StyledPresentation = styled.div`
   align-items: center;
   height: 595px;
   margin: auto;
-  max-width: calc(${({ theme }) => theme.maxWidth} - 185px);
+  max-width: calc(${({ theme }) => theme.maxWidth} - 125px);
 
   .lottie-player {
     margin-top: 15rem;
@@ -22,19 +22,23 @@ export const TypedContainer = styled.div`
   margin-left: 2.8rem;
 
   .currently-dev {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
     letter-spacing: 0.2px;
+    margin-bottom: 1rem;
   }
 
   h1 {
-    font-size: 3.1rem;
-    letter-spacing: 0.2px;
+    font-size: 2rem;
+  }
+
+  h3 {
   }
 
   .my-buttons {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    margin-top: 2rem;
 
     a {
       font-family: inherit;
@@ -48,7 +52,7 @@ export const TypedContainer = styled.div`
     align-items: center;
     flex-wrap: wrap;
     min-height: 80px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
     span {
       margin-right: 0.8rem;
@@ -62,6 +66,7 @@ export const TypedContainer = styled.div`
       font-size: 1.1rem;
       font-weight: 600;
       letter-spacing: 0.3px;
+      margin-bottom: 0.25rem;
     }
   }
 `;

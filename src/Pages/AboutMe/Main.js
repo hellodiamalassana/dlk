@@ -27,18 +27,20 @@ function Main() {
         <div>
           <p>
             I'm Lautaro Figueroa, 22 years old, from Argentina and I'm most
-            excited about <b>Front-End Development</b> using mainly React.js
-            with Redux. <br />
-            However I'm interested in diving deeply into the
-            <b> Back-End Development </b>
-            as I'm aiming to become a Full-Stack Developer in the short term.
+            excited about <b>Full-Stack Web Development</b>, using mainly
+            <b> React.js with Redux</b> and
+            <b> MongoDB</b> as preferred database. <br />
+          </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            However, I'm currently diving into Python by creating some basic
+            programs / games as I intend to be part of the <b>cybersecurity </b>
+            field in the mid term.
           </p>
           <p>
             Whenever I start a new project, my main goal is to try to deliver
             the most <b>user-friendly interface</b> with a modern design so that
             the user can have the best possible experience on my site.
           </p>
-          {/* Whenever I start a new project, I like to set as my main goal to try to deliver the most user-friendly interface with a modern design so that the user can have the best possible experience on my site. */}
           <p>
             Some of the <span>technologies/languages</span> I use:
           </p>
@@ -60,9 +62,11 @@ function Main() {
             </span>
           </p>
         </div>
-        <img src={pfp0} alt="Lautaro Figueroa" />
+        <div className="photo-socialmedia">
+          <img src={pfp0} alt="Lautaro Figueroa" />
+          <SocialLinks />
+        </div>
       </StyledAboutMe>
-      <SocialLinks />
       <StyledEducation>
         <ul>
           <h2>Education</h2>

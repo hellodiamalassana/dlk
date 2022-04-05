@@ -36,7 +36,7 @@ function MyProjects() {
         />
       </svg>
       <StyledProjectsSection>
-        <h2 id="my-projects">My Last Projects</h2>
+        <h2 id="my-projects">My recent Projects</h2>
         <span className="h2-border" />
         <div>
           {projectsData.map((project) => {
