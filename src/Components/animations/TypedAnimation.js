@@ -4,9 +4,9 @@ import Typed from "typed.js";
 function TypedAnimation() {
   var options = {
     strings: [
-      "<b style='color:#3178c6'>Typescript</b> ^200",
-      "<b style='color:#3773A5'>Python - C++</b> ^200",
-      "<b>Cybersecurity</b>",
+      "<b style='color:#694AF6'>Microservices</b> ^200",
+      "<b>Some cybersecurity</b> ^200",
+      "<b>Project management</b>",
     ],
     typeSpeed: 50, // typeSpeed in milliseconds
     startDelay: 800, // startDelay Time before typing starts in milliseconds
