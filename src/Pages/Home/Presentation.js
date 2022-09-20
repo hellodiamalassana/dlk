@@ -44,7 +44,7 @@ export default function FirstImpression() {
             <span>Interested in learning: </span>
             <h4 className="element"></h4>
           </div>
-          <h3>Currently learning: SQL Databases & Python</h3>
+          <h3>Currently building: Software solution for tourism sector.</h3>
           <div className="my-buttons">
             <Button
               component={Link}
