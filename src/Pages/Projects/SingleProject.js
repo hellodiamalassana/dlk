@@ -16,7 +16,7 @@ function SingleProject({
           <div className="box">
             <div>
               <h3>{title}</h3>
-              {<span className="end-date">End date {endDate}</span>}
+              {endDate && <span className="end-date">End date {endDate}</span>}
             </div>
             <a href={links.seeProject} target="_blank">
               <img src={image} alt={title} />

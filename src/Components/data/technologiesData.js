@@ -15,7 +15,7 @@ export const learnedTechnologies = [
   { title: "HTML", src: html },
   { title: "CSS", src: css },
   { title: "JavaScript", src: javascript },
-  { title: "React.JS", src: react },
+  { title: "React.js", src: react },
   { title: "Redux", src: redux },
   { title: "MaterialUI", src: materialUI },
   { title: "Sass", src: sass },

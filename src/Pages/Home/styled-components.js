@@ -66,7 +66,7 @@ export const TypedContainer = styled.div`
       font-size: 1.1rem;
       font-weight: 600;
       letter-spacing: 0.3px;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.15rem;
     }
   }
 `;
