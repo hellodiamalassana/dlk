@@ -29,7 +29,7 @@ function Main() {
             I'm Lautaro Figueroa, 22 years old, from Argentina and I'm most
             excited about <b>Full-Stack Web Development</b>, using mainly
             <b> Next.js with Typescript</b>, <b> Redux or Zustand </b>as state
-            management and
+            management, and
             <b> MongoDB or MySQL</b> as database depending on the necessities of
             the project.
           </p>
