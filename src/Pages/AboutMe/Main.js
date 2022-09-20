@@ -28,18 +28,27 @@ function Main() {
           <p>
             I'm Lautaro Figueroa, 22 years old, from Argentina and I'm most
             excited about <b>Full-Stack Web Development</b>, using mainly
-            <b> React.js with Redux</b> and
-            <b> MongoDB</b> as preferred database. <br />
+            <b> Next.js with Typescript</b>, <b> Redux or Zustand </b>as state
+            management and
+            <b> MongoDB or MySQL</b> as database depending on the necessities of
+            the project.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            However, I'm currently diving into Python by creating some basic
+            I'm aiming to become a proficient <b>Full-Stack Web Developer</b>,
+            as i want to be able to create any kind of web application, from a
+            simple landing page to a complex Software business.
+            {/* However, I'm currently diving into Python by creating some basic
             programs / games as I intend to be part of the <b>cybersecurity </b>
-            field in the mid term.
+            field in the mid term. */}
           </p>
           <p>
             Whenever I start a new project, my main goal is to try to deliver
-            the most <b>user-friendly interface</b> with a modern design so that
-            the user can have the best possible experience on my site.
+            the best possible <b>user-experience</b>, with a clean and easy to
+            use UI, and a well-structured code that can be easily understood by
+            anyone.
+            {/*  my main goal is to try to deliver
+            the highest <b>user-experience</b> with a modern design so that
+            the user can have the best possible experience on my site. */}
           </p>
           <p>
             Some of the <span>technologies/languages</span> I use:
