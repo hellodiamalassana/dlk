@@ -2,29 +2,10 @@
 import tourism0 from "../../Pages/Projects/images/tourism-0.png";
 import makerlf1 from "../../Pages/Projects/images/MakerLF-1.png";
 import rumrumCars0 from "../../Pages/Projects/images/rumrum-cars-0.png";
+import bookingSoftwareDashboard from "../../Pages/Projects/images/booking-software-dashboard.png";
+// import bookingSoftwareUsersTable from "../../Pages/Projects/images/booking-software-users-table.png";
 
 const projectsData = [
-  {
-    title: "Landing Page | SasS oriented",
-    endDate: "20/11/2021",
-    image: makerlf1,
-    description: [
-      "A static SasS landing page i built with React, styled-components, react-router, and react hooks.",
-      "This is a static landing page usually used for marketing of products.",
-      "All the components are reusable and can be used for any dynamic content.",
-    ],
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React.JS",
-      "styled-components",
-    ],
-    links: {
-      seeProject: "https://first-saas-landing-page.netlify.app/",
-    },
-    id: 0,
-  },
   {
     title: "Tourism Website | React - Redux ",
     endDate: "24/12/2021",
@@ -38,7 +19,7 @@ const projectsData = [
       "HTML",
       "CSS",
       "JavaScript",
-      "React.JS",
+      "React.js",
       "Redux",
       "Tailwind",
       "styled-components",
@@ -47,10 +28,10 @@ const projectsData = [
       seeProject: "https://lautaroef.github.io/tourism-website-react-03/",
       seeCode: "https://github.com/Lautaroef/tourism-website-react-03",
     },
-    id: 1,
+    id: 0,
   },
   {
-    title: "RumRum Cars | MERN App",
+    title: "RumRum Cars | MERN Stack",
     endDate: "17/02/2022",
     image: rumrumCars0,
     description: [
@@ -60,7 +41,7 @@ const projectsData = [
       "Implemented Cloudinary services to handle storing high-quality images.",
     ],
     technologies: [
-      "React.JS",
+      "React.js",
       "Redux",
       "Sass",
       "MaterialUI",
@@ -72,6 +53,28 @@ const projectsData = [
     links: {
       seeProject: "https://rumrumcars-a9207.web.app/",
       seeCode: "https://github.com/Lautaroef/RumRumCars",
+    },
+    id: 1,
+  },
+  {
+    title: "Booking software | Typescript - Next.js - MySQL",
+    image: bookingSoftwareDashboard,
+    description: [
+      "Currently developing a booking software for touristic businesses, using mainly Typescript, Next.js and MySQL.",
+      "The main goal is to create a full-stack app that can be used by any touristic business to manage their 360° needs in a single platform.",
+    ],
+    technologies: [
+      "Sass",
+      "React.js",
+      "Typescript",
+      "Next.js",
+      "NextAuth",
+      "Prisma",
+      "MySQL - PlanetScale",
+    ],
+    links: {
+      seeProject: "#",
+      seeCode: "#",
     },
     id: 2,
   },
