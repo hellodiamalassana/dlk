@@ -73,8 +73,9 @@ const projectsData = [
       "MySQL - PlanetScale",
     ],
     links: {
+      private: true,
       seeProject: "#",
-      seeCode: "#",
+      seeCode: "https://github.com/LautaroFigueroa/",
     },
     id: 2,
   },

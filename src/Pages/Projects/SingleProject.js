@@ -1,4 +1,6 @@
 import React from "react";
+import { FaLock } from "react-icons/fa";
+
 import { StyledSingleProject } from "./styled-components";
 
 function SingleProject({
@@ -36,14 +38,19 @@ function SingleProject({
             </div>
           </div>
           <div className="links-buttons">
-            <a href={links.seeProject} target="_blank">
+            <a
+              href={links.seeProject}
+              target="_blank"
+              style={
+                links.seeProject === "#" ? { cursor: "not-allowed" } : undefined
+              }
+            >
               Live
             </a>
-            {links.seeCode && (
-              <a href={links.seeCode} target="_blank">
-                Github
-              </a>
-            )}
+
+            <a href={links.seeCode} target="_blank">
+              Github {links.private ? <FaLock /> : null}
+            </a>
           </div>
         </StyledSingleProject>
       ) : null}

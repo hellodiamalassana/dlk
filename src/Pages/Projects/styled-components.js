@@ -118,6 +118,10 @@ export const StyledSingleProject = styled.div.attrs(() => ({
       text-align: center;
       text-decoration: none;
       transition: background-color 0.1s ease-out;
+      svg {
+        margin-bottom: -0.1rem;
+        margin-left: 0.1rem;
+      }
 
       &:hover {
         background-color: #1565c0;
