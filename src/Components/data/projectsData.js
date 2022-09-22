@@ -60,8 +60,8 @@ const projectsData = [
     title: "Booking software | Typescript - Next.js - MySQL",
     image: bookingSoftwareDashboard,
     description: [
-      "Currently developing a booking software for touristic businesses, using mainly Typescript, Next.js and MySQL.",
-      "The main goal is to create a full-stack app that can be used by any touristic business to manage their 360° needs in a single platform.",
+      "Currently developing a booking software for the Tourism Industry, using mainly Typescript, Next.js and MySQL.",
+      "The main goal is to create a Full-Stack app that can be used by any tourism business to manage their 360° needs in a single platform.",
     ],
     technologies: [
       "Sass",
