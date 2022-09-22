@@ -42,10 +42,14 @@ function Main() {
             field in the mid term. */}
           </p>
           <p>
-            Whenever I start a new project, my main goal is to try to deliver
+            For any project I'm part of, my main goal is to try to deliver the
+            best possible <b>user-experience</b>, with a clean and easy to use
+            UI, and a well-structured code that can be easily understood by
+            anyone.
+            {/* Whenever I start a new project, my main goal is to try to deliver
             the best possible <b>user-experience</b>, with a clean and easy to
             use UI, and a well-structured code that can be easily understood by
-            anyone.
+            anyone. */}
             {/*  my main goal is to try to deliver
             the highest <b>user-experience</b> with a modern design so that
             the user can have the best possible experience on my site. */}
