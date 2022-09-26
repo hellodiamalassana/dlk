@@ -19,7 +19,7 @@ export const StyledPresentation = styled.div`
 
 export const TypedContainer = styled.div`
   width: 100%;
-  margin-left: 2.8rem;
+  margin-left: 2.25rem;
 
   .currently-dev {
     font-size: 1.5rem;

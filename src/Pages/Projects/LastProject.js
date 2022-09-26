@@ -27,7 +27,11 @@ function PortfolioProject() {
           </Tooltip>
         ))}
       </div>
-      <a href="https://github.com/Lautaroef/Portfolio-Website" target="_blank">
+      <a
+        href="https://github.com/Lautaroef/Portfolio-Website"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsGithub />
         Github
       </a>

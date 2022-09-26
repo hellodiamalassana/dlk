@@ -39,8 +39,9 @@ function SingleProject({
           </div>
           <div className="links-buttons">
             <a
-              href={links.seeProject}
               target="_blank"
+              rel="noreferrer"
+              href={links.seeProject}
               style={
                 links.seeProject === "#" ? { cursor: "not-allowed" } : undefined
               }

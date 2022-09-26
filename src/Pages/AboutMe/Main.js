@@ -30,13 +30,13 @@ function Main() {
             excited about <b>Full-Stack Web Development</b>, using mainly
             <b> Next.js with Typescript</b>, <b> Redux or Zustand </b>as state
             management, and
-            <b> MongoDB or MySQL</b> as database depending on the necessities of
-            the project.
+            <b> MongoDB or MySQL</b> as database depending on the needs of the
+            project.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            I'm aiming to become a proficient <b>Full-Stack Web Developer</b>,
-            as i want to be able to create any kind of web application, from a
-            simple landing page to a complex Software business.
+            My goal is to become a proficient <b>Full-Stack web developer </b>
+            as I want to be able to create any type of web application, from a
+            simple landing page to a complex software business.
             {/* However, I'm currently diving into Python by creating some basic
             programs / games as I intend to be part of the <b>cybersecurity </b>
             field in the mid term. */}
@@ -55,7 +55,9 @@ function Main() {
             the user can have the best possible experience on my site. */}
           </p>
           <p>
-            Some of the <span>technologies/languages</span> I use:
+            Some of the <span>technologies</span> I've been working with lately
+            are:
+            {/* Some of the <span>technologies/languages</span> I use: */}
           </p>
           <StyledTechs>
             {learnedTechnologies.map((tech) => (
