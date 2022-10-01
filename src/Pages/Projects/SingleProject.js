@@ -20,7 +20,7 @@ function SingleProject({
               <h3>{title}</h3>
               {endDate && <span className="end-date">End date {endDate}</span>}
             </div>
-            <a href={links.seeProject} target="_blank">
+            <a href={links.seeProject} target="_blank" rel="noreferrer">
               <img src={image} alt={title} />
             </a>
             <div>
@@ -39,8 +39,8 @@ function SingleProject({
           </div>
           <div className="links-buttons">
             <a
-              target="_blank"
               rel="noreferrer"
+              target="_blank"
               href={links.seeProject}
               style={
                 links.seeProject === "#" ? { cursor: "not-allowed" } : undefined
@@ -49,7 +49,7 @@ function SingleProject({
               Live
             </a>
 
-            <a href={links.seeCode} target="_blank">
+            <a href={links.seeCode} target="_blank" rel="noreferrer">
               Github {links.private ? <FaLock /> : null}
             </a>
           </div>

@@ -15,8 +15,8 @@ function SocialLinks() {
         <a
           href="https://www.linkedin.com/in/lautaro-figueroa-40451815a/"
           alt="My LinkedIn"
-          target="_blank"
           rel="noreferrer"
+          target="_blank"
         >
           <SiLinkedin className="linkedin" />
         </a>
