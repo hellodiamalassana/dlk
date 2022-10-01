@@ -1,6 +1,6 @@
 // Images
-import tourism0 from "../../Pages/Projects/images/tourism-0.png";
-import rumrumCars0 from "../../Pages/Projects/images/rumrum-cars-cars-2.png";
+import tourism from "../../Pages/Projects/images/tourism-0.png";
+import rumrumCars from "../../Pages/Projects/images/rumrum-cars-cars-2.png";
 import tourismAgencySingleDestination from "../../Pages/Projects/images/tourism-agency-single-destination-2.png";
 import bookingSoftwareDashboard from "../../Pages/Projects/images/booking-software-dashboard.png";
 // import bookingSoftwareUsersTable from "../../Pages/Projects/images/booking-software-users-table.png";
@@ -9,7 +9,7 @@ const projectsData = [
   // {
   //   title: "Tourism Website | React - Redux ",
   //   endDate: "24/12/2021",
-  //   image: tourism0,
+  //   image: tourism,
   //   description: [
   //     "A Tourism booking website made using React with useContext-Redux for the state.",
   //     "Worked with 2 APIs, it has a quick weather info about the touristic place that can be seen from the navigation bar.",
@@ -33,7 +33,7 @@ const projectsData = [
   {
     title: "RumRum Cars | MERN Stack",
     endDate: "March 2022",
-    image: rumrumCars0,
+    image: rumrumCars,
     description: [
       "This project aims to simulate a 'Rent a car business model', built from scratch using the MERN stack + Sass and MaterialUI for the UI.",
       // "My second project of 2022 was a 'Rent a car business model', built from scratch using the MERN Stack + Sass and MaterialUI to handle the CSS structure.",
@@ -87,8 +87,10 @@ const projectsData = [
     title: "Booking software | Typescript - Next.js - MySQL",
     image: bookingSoftwareDashboard,
     description: [
-      "Currently building a booking software for the Tourism Industry, using mainly Typescript, Next.js and MySQL.",
-      "The main goal is to create a Full-Stack app that can be used by any tourism business to manage their 360° needs in a single platform.",
+      "Currently building a Full-Stack booking software for the Tourism Industry, using mainly Typescript, Next.js and MySQL.",
+      "This project for tour operators and travel agencies will make it easier for them to manage their bookings, customers, and their accounting.",
+      "It is in development mode and already has a database schema with some data, but with a lot of Frontend work to do.",
+      // "The main goal is to create a app that can be used by any tourism business to manage their 360° needs in a single platform.",
     ],
     technologies: [
       "Sass",
