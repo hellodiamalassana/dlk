@@ -103,7 +103,7 @@ const projectsData = [
     ],
     links: {
       private: true,
-      seeProject: "#",
+      seeProject: "https://booking-software-lautarofigueroa.vercel.app/",
       seeCode: "https://github.com/LautaroFigueroa/",
     },
     id: 3,
