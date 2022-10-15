@@ -35,14 +35,15 @@ const projectsData = [
     endDate: "March 2022",
     image: rumrumCars,
     description: [
-      "This project aims to simulate a 'Rent a car business model', built from scratch using the MERN stack + Sass and MaterialUI for the UI.",
+      'This project aims to simulate a "Rent a car business model", built entirely from scratch using TypeScript plus the "MERN" stack.',
       // "My second project of 2022 was a 'Rent a car business model', built from scratch using the MERN Stack + Sass and MaterialUI to handle the CSS structure.",
-      "State management handled by Redux (ToolKit - Query).",
+      "The state management is handled by Redux (ToolKit - Query).",
       "Implemented Cloudinary services to handle the storage and retrieval of high quality images.",
       "Used Firebase Authentication - Hosting services.",
     ],
     technologies: [
       "React.js",
+      "TypeScript",
       "Redux",
       "Sass",
       "MaterialUI",
@@ -68,9 +69,9 @@ const projectsData = [
     ],
     technologies: [
       "React.js",
-      "Redux",
-      "Next.js",
       "TypeScript",
+      "Next.js",
+      "Redux",
       "Sass",
       "MaterialUI",
       "MongoDB",
@@ -111,3 +112,19 @@ const projectsData = [
 ];
 
 export default projectsData;
+
+// This project aimed to upgrade the current updated website of one of the most prestigious travel companies from Northern Argentina.
+
+// So I Designed a fully functional Tourism web app from scratch where I conceptualized and designed the user interface and developed an ecommerce system (based on MongoDB) that allowed users to book trips
+// directly with the agency.
+
+// The project was built mainly with React.js, TypeScript, Next.js, and MongoDB.
+// Integrations to process payments such as PayPal and MercadoPago were added.
+
+// ---
+
+// Achieved:
+
+// - Fully SEO optimized score of 100% and a Real Experience Score (RES) of 98/100 according to Google Lighthouse and Vercel.
+
+// - A fully responsive web application that works on all devices.
